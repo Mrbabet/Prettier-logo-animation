@@ -1,0 +1,134 @@
+$background: #1a2b34;
+$empty-element: #334651;
+$blue: #56b3b4;
+$red: #ea5e5e;
+$yellow: #f7ba3e;
+$purple: #bf85bf;
+$unit: 5px;
+
+:root {
+  --background: #{$background};
+  --empty-element: #{$empty-element};
+  --blue: #{$blue};
+  --red: #{$red};
+  --yellow: #{$yellow};
+  --purple: #{$purple};
+  --unit: #{$unit};
+}
+
+body {
+  background-color: var(--background);
+}
+.container {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  margin: 5rem auto;
+  width: 1000px;
+  .row {
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+  }
+}
+.element {
+  background-color: var(--empty-element);
+  width: var(--unit);
+  height: 10px;
+  border-radius: 99vh;
+}
+.blue {
+  background-color: var(--blue);
+}
+.red {
+  background-color: var(--red);
+}
+.yellow {
+  background-color: var(--yellow);
+}
+.purple {
+  background-color: var(--purple);
+}
+.unit-1 {
+  width: calc(var(--unit));
+}
+.unit-2 {
+  width: calc(var(--unit) * 2);
+}
+.unit-3 {
+  width: calc(var(--unit) * 3);
+}
+.unit-4 {
+  width: calc(var(--unit) * 4);
+}
+.unit-5 {
+  width: calc(var(--unit) * 5);
+}
+.unit-6 {
+  width: calc(var(--unit) * 6);
+}
+.unit-7 {
+  width: calc(var(--unit) * 7);
+}
+.unit-8 {
+  width: calc(var(--unit) * 8);
+}
+.unit-9 {
+  width: calc(var(--unit) * 9);
+}
+.unit-10 {
+  width: calc(var(--unit) * 10);
+}
+.unit-11 {
+  width: calc(var(--unit) * 11);
+}
+.unit-12 {
+  width: calc(var(--unit) * 12);
+}
+.unit-13 {
+  width: calc(var(--unit) * 13);
+}
+
+.unit-14 {
+  width: calc(var(--unit) * 14);
+}
+
+.unit-15 {
+  width: calc(var(--unit) * 15);
+}
+
+.unit-16 {
+  width: calc(var(--unit) * 16);
+}
+
+.unit-17 {
+  width: calc(var(--unit) * 17);
+}
+
+.unit-18 {
+  width: calc(var(--unit) * 18);
+}
+
+.unit-19 {
+  width: calc(var(--unit) * 19);
+}
+
+.unit-20 {
+  width: calc(var(--unit) * 20);
+}
+.unit-22 {
+  width: calc(var(--unit) * 22);
+}
+.unit-26 {
+  width: calc(var(--unit) * 26);
+}
+.unit-28 {
+  width: calc(var(--unit) * 28);
+}
+.unit-30 {
+  width: calc(var(--unit) * 30);
+}
+.unit-39 {
+  width: calc(var(--unit) * 39);
+}
