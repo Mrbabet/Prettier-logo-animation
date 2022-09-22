@@ -6,6 +6,7 @@
   --yellow: #f7ba3e;
   --purple: #bf85bf;
   --unit: 5px;
+  --delay: 200ms;
 }
 
 body {
@@ -20,7 +21,8 @@ body {
   margin: 5rem auto;
   width: 1000px;
 }
-.container .row {
+
+.row {
   width: 100%;
   display: flex;
   gap: 10px;
@@ -35,13 +37,82 @@ body {
 }
 
 .row:nth-of-type(2n) {
-  -webkit-animation: slide 1s 100ms;
-          animation: slide 1s 100ms;
+  -webkit-animation: slide 1s;
+          animation: slide 1s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
 }
 
 .row:nth-of-type(2n-1) {
-  -webkit-animation: slide-rewerse 1s 100ms;
-          animation: slide-rewerse 1s 100ms;
+  -webkit-animation: slide-rewerse 1s;
+          animation: slide-rewerse 1s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+
+.row:nth-of-type(1) {
+  -webkit-animation-delay: calc(var(--delay) * 1);
+          animation-delay: calc(var(--delay) * 1);
+}
+
+.row:nth-of-type(2) {
+  -webkit-animation-delay: calc(var(--delay) * 2);
+          animation-delay: calc(var(--delay) * 2);
+}
+
+.row:nth-of-type(3) {
+  -webkit-animation-delay: calc(var(--delay) * 3);
+          animation-delay: calc(var(--delay) * 3);
+}
+
+.row:nth-of-type(4) {
+  -webkit-animation-delay: calc(var(--delay) * 4);
+          animation-delay: calc(var(--delay) * 4);
+}
+
+.row:nth-of-type(5) {
+  -webkit-animation-delay: calc(var(--delay) * 5);
+          animation-delay: calc(var(--delay) * 5);
+}
+
+.row:nth-of-type(6) {
+  -webkit-animation-delay: calc(var(--delay) * 6);
+          animation-delay: calc(var(--delay) * 6);
+}
+
+.row:nth-of-type(7) {
+  -webkit-animation-delay: calc(var(--delay) * 7);
+          animation-delay: calc(var(--delay) * 7);
+}
+
+.row:nth-of-type(8) {
+  -webkit-animation-delay: calc(var(--delay) * 8);
+          animation-delay: calc(var(--delay) * 8);
+}
+
+.row:nth-of-type(9) {
+  -webkit-animation-delay: calc(var(--delay) * 9);
+          animation-delay: calc(var(--delay) * 9);
+}
+
+.row:nth-of-type(10) {
+  -webkit-animation-delay: calc(var(--delay) * 10);
+          animation-delay: calc(var(--delay) * 10);
+}
+
+.row:nth-of-type(11) {
+  -webkit-animation-delay: calc(var(--delay) * 11);
+          animation-delay: calc(var(--delay) * 11);
+}
+
+.row:nth-of-type(12) {
+  -webkit-animation-delay: calc(var(--delay) * 12);
+          animation-delay: calc(var(--delay) * 12);
+}
+
+.row:nth-of-type(13) {
+  -webkit-animation-delay: calc(var(--delay) * 13);
+          animation-delay: calc(var(--delay) * 13);
 }
 
 @-webkit-keyframes slide {

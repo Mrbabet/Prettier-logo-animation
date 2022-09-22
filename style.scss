@@ -5,6 +5,7 @@ $red: #ea5e5e;
 $yellow: #f7ba3e;
 $purple: #bf85bf;
 $unit: 5px;
+$delay: 200ms;
 
 :root {
   --background: #{$background};
@@ -14,6 +15,7 @@ $unit: 5px;
   --yellow: #{$yellow};
   --purple: #{$purple};
   --unit: #{$unit};
+  --delay: #{$delay};
 }
 
 body {
@@ -26,12 +28,12 @@ body {
   flex-direction: column;
   margin: 5rem auto;
   width: 1000px;
-  .row {
-    width: 100%;
-    display: flex;
-    gap: 10px;
-    justify-content: center;
-  }
+}
+.row {
+  width: 100%;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
 }
 .element {
   background-color: var(--empty-element);
@@ -41,11 +43,53 @@ body {
 }
 
 .row:nth-of-type(2n) {
-  animation: slide 1s 100ms;
+  animation: slide 1s;
+  animation-fill-mode: both;
 }
 .row:nth-of-type(2n-1) {
-  animation: slide-rewerse 1s 100ms;
+  animation: slide-rewerse 1s;
+  animation-fill-mode: both;
 }
+.row:nth-of-type(1) {
+  animation-delay: calc(var(--delay) * 1);
+}
+.row:nth-of-type(2) {
+  animation-delay: calc(var(--delay) * 2);
+}
+.row:nth-of-type(3) {
+  animation-delay: calc(var(--delay) * 3);
+}
+.row:nth-of-type(4) {
+  animation-delay: calc(var(--delay) * 4);
+}
+.row:nth-of-type(5) {
+  animation-delay: calc(var(--delay) * 5);
+}
+.row:nth-of-type(6) {
+  animation-delay: calc(var(--delay) * 6);
+}
+.row:nth-of-type(7) {
+  animation-delay: calc(var(--delay) * 7);
+}
+.row:nth-of-type(8) {
+  animation-delay: calc(var(--delay) * 8);
+}
+.row:nth-of-type(9) {
+  animation-delay: calc(var(--delay) * 9);
+}
+.row:nth-of-type(10) {
+  animation-delay: calc(var(--delay) * 10);
+}
+.row:nth-of-type(11) {
+  animation-delay: calc(var(--delay) * 11);
+}
+.row:nth-of-type(12) {
+  animation-delay: calc(var(--delay) * 12);
+}
+.row:nth-of-type(13) {
+  animation-delay: calc(var(--delay) * 13);
+}
+
 @keyframes slide {
   0% {
     translate: 100%;
@@ -61,6 +105,8 @@ body {
   100% {
     translate: 0%;
   }
+
+  // Variables
 }
 .blue {
   background-color: var(--blue);
