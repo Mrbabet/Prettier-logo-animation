@@ -18,6 +18,7 @@ $unit: 5px;
 
 body {
   background-color: var(--background);
+  overflow: hidden;
 }
 .container {
   display: flex;
@@ -37,6 +38,29 @@ body {
   width: var(--unit);
   height: 10px;
   border-radius: 99vh;
+}
+
+.row:nth-of-type(2n) {
+  animation: slide 1s 100ms;
+}
+.row:nth-of-type(2n-1) {
+  animation: slide-rewerse 1s 100ms;
+}
+@keyframes slide {
+  0% {
+    translate: 100%;
+  }
+  100% {
+    translate: 0%;
+  }
+}
+@keyframes slide-rewerse {
+  0% {
+    translate: -100%;
+  }
+  100% {
+    translate: 0%;
+  }
 }
 .blue {
   background-color: var(--blue);
