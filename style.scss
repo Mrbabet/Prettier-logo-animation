@@ -92,7 +92,7 @@ body {
 
 @keyframes slide {
   0% {
-    translate: 100%;
+    translate: 200%;
   }
   100% {
     translate: 0%;
@@ -100,7 +100,7 @@ body {
 }
 @keyframes slide-rewerse {
   0% {
-    translate: -100%;
+    translate: -200%;
   }
   100% {
     translate: 0%;
